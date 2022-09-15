@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My-ToDo-App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <h1 class="main-title" >My To-Do Lists</h1>
+        <h3 class="sub-title">New Task Creation</h3>
+        <div class="separator"></div>
+        <form id="form">
+
+            <div class="t-name">
+                <label for="name">Name : </label>
+                <input name="name" id="name" placeholder="Add Task Name"  type="text">
+            </div>
+            <div class="t-priority">
+                <label for="priority">Priority : </label>
+                <select name="priority" id="priority">
+                    <option disabled>Select one</option>
+                    <option value="high">High</option>
+                    <option value="medium">Medium</option>
+                    <option value="Low">Low</option>
+                </select>
+            </div>
+            <div>
+                <label for="t-date">Date : </label>
+                <input type="date" name="date" id="t-date">
+            </div>
+            <div class="t-submit">
+                <input type="submit" value="Add New">
+            </div>
+        </form>
+
+        <h3 class="sub-title">Task Management</h3>
+        <div class="separator"></div>
+        <div class="tools">
+
+            <div class="search">
+                <label for="t-search">Search : </label>
+                <input type="text" name="t-search" id="t-search" placeholder="search by Name">
+            </div>
+            <div class="filt">
+                <label for="filter">Filter : </label>
+                <select name="filter" id="filter">
+                    <option value="all">All</option>
+                    <option value="complete">Complete</option>
+                    <option value="incomplete">Incomplete</option>
+                    <option value="today">Today</option>
+                </select>
+            </div>
+
+            <div class="sort">
+                <label for="sorting">Sort : </label>
+                <select name="sorting" id="sorting">
+                    <option value="newest">Newest</option>
+                    
+                    <option value="oldest">Oldest</option>
+                    
+                </select>
+            </div>
+            <div class="by-date">
+                <label for="s-date">Date : </label>
+                <input type="date" name="s-date" id="s-date">
+            </div>
+            
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>Task Name</th>
+                    <th>Priority</th>
+                    <th>Status</th>
+                    <th>Date</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+                <tr>
+                    <td>1</td>
+                    <td>JavaScript</td>
+                    <td>High</td>
+                    <td>Incomplete</td>
+                    <td>09/14/2022</td>
+                    <td>
+                        <button id="delete"> <i class="fas fa-trash"></i> </button>
+                        <button id="check"><i class="fas fa-check-double"></i></button>
+                        <button id="edit"><i class="fas fa-highlighter"></i></button>
+                    </td>
+                </tr>
+            </tbody>
+            
+        </table>
+    </main>
+    <script src="js/app.js"></script>
+</body>
+</html>

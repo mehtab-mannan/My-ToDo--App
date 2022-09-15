@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    background-color: antiquewhite;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+
+}
+
+main{
+    background-color: #211548;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    height: 95vh;
+    width: 100%;
+
+}
+
+.main-title{
+    text-align: center;
+    position: relative;
+    margin-bottom: 10px;
+
+}
+
+.main-title::after{
+    content: "";
+    width: 200px;
+    height: 2px;
+    background: orange;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.sub-title{
+    font-size: 25px;
+    color: aliceblue;
+    margin-top: 20px;
+}
+
+.separator{
+    width: 100%;
+    height: 1px;
+    background-color: aliceblue;
+    margin: 5px 0 10px;
+}
+
+#form{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+
+}
+
+#form label{
+    color: azure;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#form > div{
+    display: flex;
+    align-items: center;
+    
+}
+
+.t-name{
+    flex: 1;
+}
+
+.t-name input{
+    width: 80%;
+}
+.t-name label{
+    width: 10%;
+}
+#form input, #form select,.tools input, .tools select{
+    height: 30px;
+
+} 
+
+.tools{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.filt select{
+    padding: 20px;
+}
+
+table,thead,tbody,tr{
+    display: block;
+    width: 100%;
+    margin: 2px;
+    
+}
+table{
+    border: 1px solid whitesmoke;
+    margin-top: 20px;
+    padding: 5px 5px 5px;
+}
+thead{
+    background: white;
+    color: #211548;
+    padding: 2px;
+}
+tr{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+}
+
+td,th{
+    flex: 1;
+    text-align: center;
+}
+tr:hover{
+    background: rgb(3, 93, 171);
+}
+td button{
+    background: unset;
+    border: none;
+    outline: none;
+    margin: 0 10px;
+    cursor: pointer;
+}
+button i{
+    pointer-events: none;
+    font-size: 25px;
+    color: white;
+}
