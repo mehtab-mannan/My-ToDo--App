@@ -96,9 +96,9 @@ main{
     align-items: center;
     gap: 20px;
 }
-.filt select{
+/* .filt select{
     padding: 20px;
-}
+} */
 
 table,thead,tbody,tr{
     display: block;
@@ -134,11 +134,11 @@ td button{
     background: unset;
     border: none;
     outline: none;
-    margin: 0 10px;
+    margin: 0 5px;
     cursor: pointer;
 }
 button i{
     pointer-events: none;
-    font-size: 25px;
+    font-size: 20px;
     color: white;
 }
