@@ -108,7 +108,7 @@ table,thead,tbody,tr{
 }
 table{
     border: 1px solid whitesmoke;
-    margin-top: 20px;
+
     padding: 5px 5px 5px;
 }
 thead{
@@ -141,4 +141,51 @@ button i{
     pointer-events: none;
     font-size: 20px;
     color: white;
+}
+
+.bulk_action{
+    display: none;
+    width: 100%;
+    justify-content: space-between;
+    height: 40px;
+    background: white;
+    color: black;
+    align-items: center;
+    margin-top: 10px;
+    padding: 0 15px;
+    
+}
+.action_group{
+    flex: 1;
+    display: flex;
+    gap: 10px;
+}
+.edit{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8px;
+}
+.edit input {
+    flex: 1;
+    border: none;
+    outline: none;
+}
+.edit select{
+    height: 100%;
+    border: none;
+    border-left: 2px solid black;
+}
+
+
+#bulk_del{
+    padding: 0px 15px;
+}
+.dismiss{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: red;
+    color: white;
+    cursor: pointer;
 }

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing Store</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <style>
+        body{
+            background-color:black;
+            color: white;
+        }
+
+        .products-area{
+            width: 75%;
+        }
+        .price-area{
+            width: 25%;
+        }
+        .card-img-top{
+            width: 150px;
+        }
+        .product-image{
+            display: flex;
+            justify-content: center;
+        }
+        
+    </style>
+    
+</head>
+<body>
+
+<header>
+    <h1 class="text-center">Welcome to Clothing Store</h1>
+    <p class="text-center">Happy Shopping</p>
+    <!-- input field -->
+<div class="input-group w-25 mx-auto mb-3">
+    <input id="searchtext" type="text" class="form-control" placeholder="Search by category" aria-label="Search by category" aria-describedby="Search">
+    <button class="btn btn-primary" id="searchBtn">Search</button>
+  </div>
+</header>
+
+<section>
+<div class="products-area">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <div class="product-image">
+                <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg" class="card-img-top" alt="...">
+            </div>
+            <div class="card-body text-black text-center">
+              <h5 class="card-title text-info">CFjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops</h5>
+              <h4>Price: 109.95</h4>
+              <p class="card-text"> <b>Category: men's clothing</b> </p>
+              <p class="card-text"> <b>Ratings:</b> </p>
+              <p class="card-text"> <b>Total:</b> </p>
+
+            </div>
+            <div class="card-footer d-flex justify-content-around">
+              <button class="btn btn-primary">Add to cart</button>
+              <button class="btn btn-danger">Details</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+</div>
+<div class="price-area"></div>
+</section>
+
+
+    <script src="/clothing-store//app.js"></script>
+</body>
+</html>

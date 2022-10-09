@@ -25,12 +25,12 @@
                     <option disabled>Select one</option>
                     <option value="high">High</option>
                     <option value="medium">Medium</option>
-                    <option value="Low">Low</option>
+                    <option value="low">Low</option>
                 </select>
             </div>
             <div class="t-date">
                 <label for="date">Date : </label>
-                <input type="date" name="date" id="date">
+                <input type="date" name="date" id="date">~
             </div>
             <div class="t-submit">
                 <input type="submit" value="Add New">
@@ -42,16 +42,19 @@
         <div class="tools">
 
             <div class="search">
-                <label for="t-search">Search : </label>
-                <input type="text" name="t-search" id="t-search" placeholder="search by Name">
+                <label for="s_name">Search : </label>
+                <input type="text" name="s_name" id="s_name" placeholder="search by Name">
             </div>
-            <div class="filt">
+            <div class="filter">
                 <label for="filter">Filter : </label>
                 <select name="filter" id="filter">
                     <option value="all">All</option>
                     <option value="complete">Complete</option>
                     <option value="incomplete">Incomplete</option>
                     <option value="today">Today</option>
+                    <option value="high">High</option>
+                    <option value="medium">Medium</option>
+                    <option value="low">Low Priority</option>
                 </select>
             </div>
 
@@ -64,15 +67,48 @@
                     
                 </select>
             </div>
-            <div class="by-date">
-                <label for="s-date">Date : </label>
-                <input type="date" name="s-date" id="s-date">
+            <div class="by_date">
+                <label for="by_date">Date : </label>
+                <input type="date" name="by_date" id="by_date">
             </div>
             
         </div>
+        <!-- Bulk Action----------------------- -->
+        <div id="bulk_action" class="bulk_action">
+            <div class="action_group">
+                <button style="border:2px solid black" id="bulk_del">Delete</button>
+                <select name="priority" id="bulk_priority" style="border:2px solid black">
+                    <option disabled selected>Change Priority</option>
+                    <option value="high">High</option>
+                    <option value="medium">Medium</option>
+                    <option value="low">Low</option>
+
+                </select>
+                <select name="status" id="bulk_status" style="border:2px solid black">
+                    <option disabled selected>Change Status</option>
+                    <option value="complete">Complete</option>
+                    <option value="incomplete">Incomplete</option>
+                </select>
+                <div class="edit" style="border: 2px solid black">
+                    <input placeholder="Modify the name" type="text" name="" id="edit_inp">
+                    <select  name="" id="edit_sel">
+                        <option value="name">Name</option>
+                        <option value="date">Date</option>
+                    </select>
+                </div>
+            </div>
+            <button class="dismiss">X</button>
+        </div>
+        <!-- -----------end --------------------------->
         <table>
             <thead>
                 <tr>
+                    <th> 
+                        <input type="checkbox" name="" id="all_select"> 
+                        <label for="all_select">
+                            All
+                        </label>
+                    </th>
                     <th>No.</th>
                     <th>Task Name</th>
                     <th>Priority</th>
@@ -91,4 +127,5 @@
     </script>
     <script src="js/app.js"></script>
 </body>
+
 </html>
